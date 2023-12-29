@@ -14,7 +14,7 @@ cursor = midb.cursor()
 # print(resultado)
 
 sql = ' INSERT INTO Usuario (nombre,apellido,email) values (%s,%s,%s) '
-values = ('roberto','shnyder','rob@paperclips.com.mx')
+values = ('pitufo','papa','papapit@aldeadehongos.com.mx')
 
 cursor.execute(sql,values)
 midb.commit()
