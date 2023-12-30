@@ -13,6 +13,7 @@ cursor = midb.cursor()
 # resultado = cursor.fetchall()
 # print(resultado)
 
+
 sql = ' INSERT INTO Usuario (nombre,apellido,email) values (%s,%s,%s) '
 values = ('pitufo','papa','papapit@aldeadehongos.com.mx')
 
