@@ -1,27 +1,5 @@
 import mysql.connector
-<<<<<<< HEAD
 
-midb = mysql.connector.connect(
-    host = 'localhost',
-    user = 'elrogerrr',
-    password = 'zapatanomurio666',
-    database = 'rogerdb'
-)
-
-cursor = midb.cursor()
-
-# cursor.execute('SELECT * FROM Usuario')
-# resultado = cursor.fetchall()
-# print(resultado)
-
-
-sql = ' INSERT INTO Usuario (nombre,apellido,email) values (%s,%s,%s) '
-values = ('pitufo','papa','papapit@aldeadehongos.com.mx')
-
-cursor.execute(sql,values)
-midb.commit()
-print (cursor.rowcount)
-=======
 import click
 from flask import current_app, g 
 from flask.cli import with_appcontext
@@ -59,5 +37,4 @@ def init_db_command():
 def init_app(app):
     app.teardown_appcontext(close_db)
     app.cli.add_command(init_db_command)
->>>>>>> 08fa88b (jhgjhg)
 
